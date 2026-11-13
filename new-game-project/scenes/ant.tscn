@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://hqjmap7fqma3"]
+
+[ext_resource type="Texture2D" uid="uid://48t80mdr0h28" path="res://assets/pixil-frame-0.png" id="1_4s44o"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1vivr"]
+size = Vector2(22, 37)
+
+[node name="Ant" type="Area2D" unique_id=1192621292 groups=["Ants"]]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=932341872]
+position = Vector2(2, 4)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("1_4s44o")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=290939275]
+position = Vector2(2, 4.5)
+shape = SubResource("RectangleShape2D_1vivr")
